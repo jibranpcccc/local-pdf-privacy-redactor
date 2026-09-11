@@ -14,3 +14,13 @@ Zero-cloud-egress document manipulation, client-side WebAssembly redaction, and 
 
 ---
 Maintained by [LocalDocPrivacy](https://localdocprivacy.netlify.app/).
+
+## 📚 In-Depth Technical Implementation Guides
+
+| Target Engineering Query | Production Reference & Guide URL |
+| :--- | :--- |
+| **How To Redact Pdf Locally Browser Wasm** | [https://localdocprivacy.netlify.app/redact-pdf-locally-browser-wasm-guide/](https://localdocprivacy.netlify.app/redact-pdf-locally-browser-wasm-guide/) |
+| **Convert Pdf To Markdown Offline Local** | [https://localdocprivacy.netlify.app/convert-pdf-to-markdown-offline-guide/](https://localdocprivacy.netlify.app/convert-pdf-to-markdown-offline-guide/) |
+| **Redact Bank Statement Pdf Locally Offline** | [https://localdocprivacy.netlify.app/redact-bank-statement-pdf-locally/](https://localdocprivacy.netlify.app/redact-bank-statement-pdf-locally/) |
+| **Remove Metadata From Pdf In Browser Client Side** | [https://localdocprivacy.netlify.app/remove-pdf-metadata-browser-wasm/](https://localdocprivacy.netlify.app/remove-pdf-metadata-browser-wasm/) |
+
