@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "LocalDocPrivacy - Client-Side In-Browser WASM PII Redaction API",
+    "description": "Zero-cloud data transfer PII detection engine specs for GDPR Article 32 compliance. Official production documentation hosted at https://localdocprivacy.netlify.app/",
+    "version": "1.1.0",
+    "contact": {
+      "name": "LocalDocPrivacy Architecture Team",
+      "url": "https://localdocprivacy.netlify.app/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://localdocprivacy.netlify.app",
+      "description": "Production Web Application Gateway"
+    }
+  ],
+  "paths": {
+    "/api/v1/pii-detector": {
+      "get": {
+        "summary": "Extract SSN, credit cards, and emails via client-side WebAssembly",
+        "description": "Executes the empirical calculations and data models for LocalDocPrivacy.",
+        "responses": {
+          "200": {
+            "description": "Successful calculation response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "site_url": {
+                      "type": "string",
+                      "example": "https://localdocprivacy.netlify.app/"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
